@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Pasien</title>
+</head>
+<body>
+<form th:action="@{/pasien/create}">
+	<table>
+	<tr>
+		<td>Nomor Pasien</td>
+		<td><input type="text" name="noPasien" id="idNoPasien"></td>
+	</tr>
+	<tr>
+		<td>Nama Pasien</td>
+		<td><input type="text" name="namaPasien" id="idNamaPasien"></td>
+	</tr>
+	<tr>
+		<td>Gender</td>
+		<td><input name="gender" type="radio" id="idGender" value="Pria"> Pria
+	<input name="gender" type="radio" id="idGender" value="Wanita">Wanita</td>
+	</tr>
+	<tr>
+	<td>Kategori Pasien</td>
+	<td><select name="kategori" id="idKategori">
+		<option>BPJS</option>
+		<option>Reguler</option>
+	</select></td>	
+	</tr>
+	<tr>
+		<td>Biaya Pasien</td>
+		<td><input type="number" name="biaya" id="idBiayaPasien"></td>
+	</tr>
+	<tr>
+		<td>Tanggal Lahir</td>
+		<td><input type="date" name="tanggalLahir" id="idTanggalLahir"></td>
+	</tr>
+	<tr> 
+		<td></td>
+		<td><button type="submit" value="submit">Submit</button>&nbsp;	
+		<button type="reset">Reset</button>
+		</td>
+		
+	</tr>	
+	</table>
+</form>
+<br>
+
+Hasil Lempar : <input type="text" th:value ="${noLempar}">
+
+</body>
+</html>

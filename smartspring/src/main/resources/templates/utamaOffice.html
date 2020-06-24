@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html  xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Utama</title>
+</head>
+<body>
+<form th:action="@{/office/penjualanOffice}">
+	<h1>Login Karyawan</h1>
+	<table>
+	<tr>
+		<td>Username</td>
+		<td><input type="text" name="username" id="userId"></td>
+	</tr>
+	<tr>
+		<td>Password</td>
+		<td><input type="password" name="password" id="passId"></td>
+	</tr>
+	<tr> 
+		<td></td>
+		<td><button type="submit" value="submit">Submit</button>
+		</td>
+		
+	</tr>	
+	</table>
+</form>
+</body>
+</html>
